@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script>
+      function calcularMedia() {
+        var nota1 = parseFloat(document.getElementById("nota1").value);
+        var nota2 = parseFloat(document.getElementById("nota2").value);
+        var nota3 = parseFloat(document.getElementById("nota3").value);
+        var nota4 = parseFloat(document.getElementById("nota4").value);
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        document.getElementById("resultado").innerHTML = "A média é: " + media;
+      }
+    </script>
+  </head>
+  <body>
+    <input id="nota1" type="text" placeholder="Digite a primeira nota"><br>
+    <input id="nota2" type="text" placeholder="Digite a segunda nota"><br>
+    <input id="nota3" type="text" placeholder="Digite a terceira nota"><br>
+    <input id="nota4" type="text" placeholder="Digite a quarta nota"><br>
+    <button onclick="calcularMedia()">Calcular Média</button><br>
+    <p id="resultado"></p>
+  </body>
+</html>
